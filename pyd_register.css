@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.vetic{
+    width: 1000px;
+    margin: 0px auto;
+}
+#regi_title{
+    position: relative;
+    margin-top: 20px;
+}
+#tlt_img,#tlt_shuxian,#tlt_info{
+    float: left;
+}
+#tlt_shuxian{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    font-size: 30px;
+    font-weight: 100;
+    color: antiquewhite;
+}
+#tlt_info{
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    width: 200px;
+    line-height: 65px;
+    /*font-size: 30px;*/
+    color: forestgreen;
+}
+#regi_title hr{
+    /*滤镜--阴影*/
+    -webkit-filter:drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+#regi_cont{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+#regi_cont .cont_pos{
+    width: 500px;
+    height: auto;
+    line-height: 50px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 20px;
+
+}
+#regi_cont .cont_pos label{
+    float: left;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+
+}
+#regi_cont .cont_pos input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    outline: none;
+}
+#regi_cont .cont_pos input:hover{
+    border: 1px solid deepskyblue;
+}
+#regi_cont .cont_pos .choose{
+    width: auto;
+    height: 12px;
+    line-height: 30px;
+    margin-left: 50px;
+}
+#regi_cont .cont_pos select{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+#regi_cont .cont_pos textarea{
+    width: 320px;
+    height: 50px;
+    resize: none;
+    overflow: hidden;
+    border: 1px solid #666666;
+    margin-left: 10px;
+}
+#regi_cont #submitBtn{
+    width: 120px;
+    margin-left: 150px;
+}
+#regi_cont #submitBtn:hover{
+    background-color: deepskyblue;
+}
