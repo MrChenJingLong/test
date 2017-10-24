@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_test</title>
+</head>
+<body>
+    <script>
+        var mHtml = "<table border='1'>";
+       for(var i=1;i<10;i++){
+           mHtml += "<tr>";
+           for(var j=1;j<=i;j++){
+               mHtml += "<td>"+j+"*"+i+"="+(i*j)+"&nbsp;&nbsp;</td>";
+           }
+           mHtml += "</tr>";
+       }
+        mHtml += "</table>";
+        document.write(mHtml);
+    </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>paiyide</title>
+    <link rel="stylesheet" type="text/css" href="nav-vertical.css">
+    <style>
+        #nav-top{
+            width:1000px;
+            margin:20px auto 0px auto;
+        }
+        #container{
+            position: relative;
+            width:1000px;
+            margin:40px auto 0px auto;
+            z-index: -1;
+        }
+        #nav-left{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 160px;
+            height: 440px;
+            background-color: burlywood;
+        }
+        #nav-left img{
+            position: relative;
+            top: 145px;
+            left: 5px;
+            width: 150px;
+            height: 150px;
+        }
+        #content{
+            position: absolute;
+            top: 0px;
+            left: 160px;
+            width: 740px;
+            height: 440px;
+            border-left: 1px solid gray;
+            border-top: 1px solid gray;
+        }
+        .n_pi_block{
+            width: 164px;
+            height: 199px;
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+            float: left;
+            padding: 10px;
+        }
+        .n_pitem_img{
+            width: 164px;
+            margin: 5px auto;
+            text-align: center;
+
+        }
+        .n_pitem_img img{
+            width: 130px;
+            height: 130px;
+        }
+        .n_pi_block h3{
+            position: relative;
+            width: 164px;
+            margin: 0px auto 10px auto ;
+            text-align: center;
+            white-space: normal;
+            font-size: 4px;
+            color: #333333;
+
+        }
+        .n_pitem_info{
+            position: relative;
+            width: 140px;
+            margin: 0px auto ;
+            text-align: center;
+            white-space: normal;
+        }
+        .n_pitem_info .n_pi_price{
+            float: left;
+            font-size: 15px;
+            color: red;
+        }
+        .n_pitem_info .n_pi_time{
+            float: right;
+            font-size: 15px;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+<!--Logo图片开始-->
+<div id="nav-top">
+    <a href="#" title="拍易得,拍易得竞拍网,竞拍网,竞拍,抢拍,秒杀,娱乐购物">
+        <img alt="拍易得" src="http://www.paiyide.net/images/logo.png" width="190px" height="65px" />
+    </a>
+</div>
+
+<!--Logo图片结束-->
+<!--导航菜单开始-->
+<div id="Navi">
+    <div id="Navi-main">
+        <ul id="nav">
+            <li class="first">
+                <span class="darrow"></span>
+                <a href="back_home_page.html" id="elets">电子</a>
+                <dl>
+                    <dt><span class="arrow"></span></dt>
+                    <dd><a href="back_home_page.html" id="phone">手机</a></dd>
+                    <dd><a href="computer.html" id="computer">电脑</a></dd>
+                    <dd><a href="orher_lots.html" >电子板</a></dd>
+                </dl>
+            </li>
+            <li >
+                <span class="darrow"></span>
+                <a href="computer.html" >家具</a>
+                <dl>
+                    <dt><span class="arrow"></span></dt>
+                    <dd><a href="orher_lots.html" >橱窗</a></dd>
+                    <dd><a href="orher_lots.html" >衣柜</a></dd>
+                    <dd><a href="orher_lots.html" >桌椅</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="orher_lots.html" >服装</a>
+                <dl>
+                    <dt><span class="arrow"></span></dt>
+                    <dd><a href="orher_lots.html">橱窗</a></dd>
+                    <dd><a href="orher_lots.html">衣柜</a></dd>
+                    <dd><a href="orher_lots.html">桌椅</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="orher_lots.html" >鞋包</a>
+                <dl>
+                    <dt><span class="arrow" ></span></dt>
+                    <dd><a href="orher_lots.html">橱窗</a></dd>
+                    <dd><a href="orher_lots.html">衣柜</a></dd>
+                    <dd><a href="orher_lots.html">桌椅</a></dd>
+                </dl>
+            </li>
+            <li>
+                <a href="orher_lots.html" >食品</a>
+                <dl>
+                    <dt><span class="arrow"></span></dt>
+                    <dd><a href="orher_lots.html">橱窗</a></dd>
+                    <dd><a href="orher_lots.html">衣柜</a></dd>
+                    <dd><a href="orher_lots.html">桌椅</a></dd>
+                </dl>
+            </li>
+            <li class="last">
+                <a href="orher_lots.html" >其他</a>
+                <dl>
+                    <dt><span class="arrow"></span></dt>
+                    <dd><a href="orher_lots.html">橱窗</a></dd>
+                    <dd><a href="orher_lots.html">衣柜</a></dd>
+                    <dd><a href="orher_lots.html">桌椅</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航菜单结束-->
+
+<!--网页主内容开始-->
+<div id="container">
+    <!--左侧导航开始-->
+    <div id="nav-left">
+        <!--<img alt="拍易得" src="http://www.paiyide.net/upload/5fc96f96-c0e1-4f30-9e15-e8bdf48519b1.JPG" />-->
+    </div>
+    <!--左侧导航结束-->
+
+    <!--右侧主内容开始-->
+    <div id="content">
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            11:11:11
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            拍卖结束
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            14:30:30
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            拍卖结束
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            17:10:00
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            拍卖结束
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            15:15:15
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="n_pi_block">
+                <div class="n_pitem_img">
+                    <a title="查看该秒杀商品的详情" href="http://www.paiyide.net/Bid/241623.html">
+                        <img alt="拍易得" src="http://www.paiyide.net/upload/485c022f-f1a6-4c7b-9ab2-8faaceddaa92.JPG" />
+                    </a>
+                </div>
+                <h3>
+                    【黑色键盘套装】微软（Microsoft）Surface Pro 4 （Intel i5 8G内存 256G存储 触控笔 预装Win10）
+                </h3>
+                <div class="n_pitem_info">
+                        <span class="n_pi_price">
+                            ￥888.88
+                        </span>
+                        <span class="n_pi_time">
+                            拍卖结束
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧主内容结束-->
+</div>
+<!--网页主内容结束-->
+
+</body>
+</html>

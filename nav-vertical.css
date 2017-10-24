@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#nav{
+    text-align: center;
+    width: 1000px;
+    margin: 0px auto;
+}
+#nav li{
+    float: left;
+}
+#nav a{
+    display: block;
+    width: 149px;
+    color: white;
+    line-height: 30px;
+    border-right: 1px solid white;
+    background-color: orange;
+    z-index: 10;
+}
+dl{
+    display: none;
+}
+dd{
+    border-top: 1px solid white;
+}
+#nav li>a:hover {
+    background-color: darkgreen;
+}
+li:hover dl{
+    display: block;
+
+}
+#nav dd>a:hover{
+    background-color: darkgreen;
+}

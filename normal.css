@@ -1,0 +1,79 @@
+#nav-top{
+    width:1000px;
+    margin:20px auto 0px auto;
+}
+#container{
+    position: relative;
+    width:1000px;
+    margin:40px auto 0px auto;
+    z-index: -1;
+}
+#nav-left{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 440px;
+    background-color: burlywood;
+}
+#nav-left img{
+    position: relative;
+    top: 145px;
+    left: 5px;
+    width: 150px;
+    height: 150px;
+}
+#content{
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    width: 740px;
+    height: 440px;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.n_pi_block{
+    width: 164px;
+    height: 199px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    float: left;
+    padding: 10px;
+}
+.n_pitem_img{
+    width: 164px;
+    margin: 5px auto;
+    text-align: center;
+
+}
+.n_pitem_img img{
+    width: 130px;
+    height: 130px;
+}
+.n_pi_block h3{
+    position: relative;
+    width: 164px;
+    margin: 0px auto 10px auto ;
+    text-align: center;
+    white-space: normal;
+    font-size: 4px;
+    color: #333333;
+
+}
+.n_pitem_info{
+    position: relative;
+    width: 140px;
+    margin: 0px auto ;
+    text-align: center;
+    white-space: normal;
+}
+.n_pitem_info .n_pi_price{
+    float: left;
+    font-size: 15px;
+    color: red;
+}
+.n_pitem_info .n_pi_time{
+    float: right;
+    font-size: 15px;
+    color: cadetblue;
+}

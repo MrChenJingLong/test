@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #content{
+            position: relative;
+            width: 600px;
+            height: 600px;
+            left:200px;
+            top: 100px;
+        }
+        #left{
+            position: absolute;
+            left: 0;
+            width:300px;
+            height:300px;
+            background-color: antiquewhite;
+        }
+        #left:hover{
+            border: 5px dotted yellow;
+        }
+       #right{
+            position: absolute;
+            right: 0;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        #right button{
+            width: 100px;
+            height: 50px;
+            background-color: limegreen;
+            border: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="left">
+            <img src="">
+        </div>
+        <div id="right">
+            <div>
+                <label>账号:</label>
+                <input type="text"/>
+            </div>
+            <div>
+                <label>密码:</label>
+                <input type="text" />
+                <a href="#">忘记密码</a>
+            </div>
+            <div>
+                <button type="submit">登录</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
