@@ -24,6 +24,35 @@
             }
             return true;
         }
+        function printDiamond(num) {
+            //打印
+            var line = 1;           //当前打印行数
+            var spaceNum = num / 2;       //打印空格数
+            var maxDiaNum = num / 2 + 1;      //最多菱形数
+            var currentDiaNum = 0;  //当前行的菱形数
+            while(line <= num){
+                //打印空格
+                for (var i = 0;i < spaceNum;i++){
+                    document.write("&nbsp;")
+                }
+                //打印菱形
+                currentDiaNum = maxDiaNum - spaceNum;
+                for (var i = 0;i < currentDiaNum;i++){
+                    document.write("*&nbsp;");
+                }
+                //打印换行
+                document.write("<br/>");
+
+                if(line > maxDiaNum -1){
+                    spaceNum++;
+                }else{
+                    spaceNum--;
+                }
+
+                line++;
+
+            }
+        }
         function print() {
             //提示输入
             var num = tip();
@@ -31,33 +60,8 @@
             if(isNum(num)){
                 //判断是否为奇数
                 if(isJiShu(num)){
-                    //打印
-                    var line = 1;           //当前打印行数
-                    var spaceNum = num / 2;       //打印空格数
-                    var maxDiaNum = num / 2 + 1;      //最多菱形数
-                    var currentDiaNum = 0;  //当前行的菱形数
-                    while(line <= num){
-                        //打印空格
-                        for (var i = 0;i < spaceNum;i++){
-                            document.write("&nbsp;")
-                        }
-                        //打印菱形
-                        currentDiaNum = maxDiaNum - spaceNum;
-                        for (var i = 0;i < currentDiaNum;i++){
-                            document.write("*&nbsp;");
-                        }
-                        //打印换行
-                        document.write("<br/>");
-
-                        if(line > maxDiaNum -1){
-                            spaceNum++;
-                        }else{
-                            spaceNum--;
-                        }
-
-                        line++;
-
-                    }
+                    //打印菱形
+                    printDiamond(num);
                 }
                 else{
                     alert("请输入奇数");
