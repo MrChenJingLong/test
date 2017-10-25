@@ -21,26 +21,26 @@
 
     <!--注册信息开始-->
     <div id="regi_cont" class="vetic">
-        <form action="" >
+        <form action="print_diamond.html" onsubmit="return check(this)">
             <div class="cont_pos">
                 <label about="user">用户名:</label>
-                <input type="text" name="user" placeholder="put yours username">
+                <input type="text" name="user" placeholder="put yours username" >
             </div>
             <div class="cont_pos">
                 <label>密码:</label>
-                <input type="password" placeholder="put yours password">
+                <input type="password" name="pass" placeholder="put yours password" >
             </div>
             <div class="cont_pos">
                 <label>确认密码:</label>
-                <input type="password" placeholder="return yours password">
+                <input type="password" name="returnPass" placeholder="return yours password">
             </div>
             <div class="cont_pos">
                 <label>手机号码:</label>
-                <input type="text" placeholder="put yours phone">
+                <input type="text" name="phone" placeholder="put yours phone">
             </div>
             <div class="cont_pos">
                 <label>性别:</label>
-                <input type="radio" name="sex" class="choose" value="male"/>男
+                <input type="radio" name="sex" class="choose" value="male" checked/>男
                 <input type="radio" name="sex" class="choose"  value="female"/>女
             </div>
             <div class="cont_pos">
@@ -55,7 +55,7 @@
             <div class="cont_pos addrs">
                 <label>详细地址:</label>
                 <br/>
-                <textarea >
+                <textarea name="addrs">
 
                 </textarea>
             </div>
@@ -65,5 +65,67 @@
         </form>
     </div>
     <!--注册信息结束-->
+    <script>
+        //判断text是否为空
+        function isEmpty(text) {
+            if(text){
+                return false;
+            }
+            return true;
+        }
+        //判断手机号是否正确
+        function isPhone(phone) {
+            var reg = /^1[0-9]{10}$/;
+            var flag = phone.test(reg);
+            return flag;
+        }
+        //判断密码是否一致
+        function isSame(pass,rePass) {
+            if(pass == rePass){
+                console.log("密码一致");
+                return true;
+            }
+            console.log("密码不一致");
+            return false;
+        }
+        function check(registerForm) {
+            //判断输入是否为空
+            var user = registerForm.user.value;
+            var pass = registerForm.pass.value;
+            var rePass = registerForm.returnPass.value;
+            var phone = registerForm.phone.value;
+            console.log("User:"+user+"  Pass:"+pass+"rePass:"+rePass+"phone:"+phone);
+            if(isEmpty(user)){
+                alert("用户名不能为空");
+                return false;
+            }
+            else if(isEmpty(pass)){
+                alert("密码不能为空");
+                return false;
+            }
+            else if(isEmpty(rePass)){
+                alert("请输入确认密码");
+                return false;
+            }
+            else if(isEmpty(phone)){
+                alert("手机号不能为空");
+                return false;
+            }
+            //判断手机号是否正确
+            else if(!isPhone(phone)){
+                alert("手机号错误，能认真填写吗");
+                return false;
+            }
+            //判断密码是否一致
+            else if(!isSame(pass,rePass)){
+                alert("密码不一致");
+                return false;
+            }else{
+                alert("注册成功");
+                return false;
+            }
+
+        }
+    </script>
 </body>
 </html>
