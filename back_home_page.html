@@ -5,6 +5,45 @@
     <title>paiyide</title>
     <link rel="stylesheet" type="text/css" href="nav-vertical.css">
     <link rel="stylesheet" type="text/css" href="normal.css">
+    <script>
+        var currentTime = 30*60*1000;            //30分钟
+        var showTime = document.getElementsByClassName("n_pi_time");
+        window.onload = function () {
+            for (var i = 0;i < showTime.length;i++){
+                showTime[i].innerText = showLastTime();
+            }
+            setInterval("reduceTime()",1000);
+
+        };
+        function showLastTime() {
+            var m = rtnMinuts();
+            var s = rtnSeconds();
+            for (var i = 0;i < showTime.length;i++){
+                showTime[i].innerText = m+":"+s;
+            }
+        }
+        function reduceTime() {
+            if(currentTime > 0){
+                currentTime -= 1000;
+            }
+            showLastTime();
+        }
+        function rtnMinuts() {
+            var m = (currentTime / (1000 * 60)+"").split(".")[0];
+            if(m<10){
+                m = "0"+m;
+            }
+            return m;
+        }
+        function rtnSeconds() {
+            var s = (currentTime - rtnMinuts()*(1000 * 60))/1000;
+            if(s<10){
+                s = "0"+s;
+            }
+            return s;
+        }
+
+    </script>
 </head>
 <body>
 
