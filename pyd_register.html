@@ -21,7 +21,7 @@
 
     <!--注册信息开始-->
     <div id="regi_cont" class="vetic">
-        <form action="print_diamond.html" onsubmit="return check(this)">
+        <form action="print_diamond.html" onsubmit="return check11(this)">
             <div class="cont_pos">
                 <label about="user">用户名:</label>
                 <input type="text" name="user" placeholder="put yours username" >
@@ -76,19 +76,19 @@
         //判断手机号是否正确
         function isPhone(phone) {
             var reg = /^1[0-9]{10}$/;
-            var flag = phone.test(reg);
+            var flag = reg.test(phone);
             return flag;
         }
         //判断密码是否一致
         function isSame(pass,rePass) {
-            if(pass.test(rePass)){
+            if(pass==rePass){
                 console.log("密码一致");
                 return true;
             }
             console.log("密码不一致");
             return false;
         }
-        function check(registerForm) {
+        function check11(registerForm) {
             //判断输入是否为空
             var user = registerForm.user.value;
             var pass = registerForm.pass.value;
@@ -99,31 +99,31 @@
                 alert("用户名不能为空");
                 return false;
             }
-            else if(isEmpty(pass)){
+            if(isEmpty(pass)){
                 alert("密码不能为空");
                 return false;
             }
-            else if(isEmpty(rePass)){
+            if(isEmpty(rePass)){
                 alert("请输入确认密码");
                 return false;
             }
-            else if(isEmpty(phone)){
+            if(isEmpty(phone)){
                 alert("手机号不能为空");
                 return false;
             }
             //判断手机号是否正确
-            else if(!isPhone(phone)){
+            if(!isPhone(phone)){
                 alert("手机号错误，能认真填写吗");
                 return false;
             }
             //判断密码是否一致
-            else if(!isSame(pass,rePass)){
+            if(!isSame(pass,rePass)){
                 alert("密码不一致");
                 return false;
-            }else{
-                alert("注册成功");
-                return false;
             }
+            alert("注册成功");
+            return false;
+
 
         }
     </script>
