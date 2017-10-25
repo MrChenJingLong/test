@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>can_move_img</title>
+    <title>can_move_ad</title>
     <style>
         *{
             margin: 0;
@@ -15,12 +15,26 @@
         }
         #box{
             position: absolute;
-            width: 100px;
+            width: 140px;
             height: 100px;
             top: 0;
             left: 50%;
-            margin-left: -50px;
+            margin-left: -70px;
+            border: 1px solid black;
 
+        }
+        #box h3{
+            position: absolute;
+            font-size: 12px;
+            top: 10px;
+            left: 50%;
+            margin-left: -30px;
+        }
+        #box #close{
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            border: 1px solid red;
         }
     </style>
     <script>
@@ -91,12 +105,22 @@
             setInterval(mStart,30,box);
         };
 
+        function mClose() {
+            var box = document.getElementById("box");
+            box.style.display = "none";
+        }
 
     </script>
 </head>
 <body>
     <div id="box">
-        <img alt="移动的美女" src="http://img3.imgtn.bdimg.com/it/u=697589879,697977226&fm=27&gp=0.jpg" width="100px" height="100px"/>
+        <a>
+            <img alt="移动的美女" src="http://img3.imgtn.bdimg.com/it/u=697589879,697977226&fm=27&gp=0.jpg" width="100px" height="100px"/>
+        </a>
+        <h3>我是万恶的广告</h3>
+        <div id="close" onclick="mClose()">
+            <span>X</span>
+        </div>
     </div>
 </body>
 </html>
