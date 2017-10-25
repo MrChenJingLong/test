@@ -38,6 +38,7 @@
         }
     </style>
     <script>
+        var inter;
         var posX = 0;
         var posY = 0;
         var wStep = 5;
@@ -102,12 +103,14 @@
 
         window.onload = function () {
             var box = document.getElementById("box");
-            setInterval(mStart,30,box);
+            inter = setInterval(mStart,30,box);
         };
 
         function mClose() {
             var box = document.getElementById("box");
+            box.style.visibility = "hidden";
             box.style.display = "none";
+            clearInterval(inter);
         }
 
     </script>
